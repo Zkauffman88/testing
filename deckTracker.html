@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SWD Deck Tracker</title>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="deckTracker.css">
+	  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+
+	  
+
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Zach's Deck Tracker</h1>
+<!-- 		
+		<div id="inputs">
+			<input type="text" placeholder="Card Name">
+			<select id="deckSelect">
+				<option>Deck 1</option>
+				<option>Deck 2</option>
+			</select>
+		</div>
+ -->
+<!-- 
+<div class="input-group">
+  <input type="text" class="form-control" aria-label="...">
+  <div class="input-group-btn">
+    <!-- Buttons -->
+<!--     <select>
+    	<option>Deck 1</option>
+    	<option>Deck 2</option>
+    </select>
+  </div>
+</div>
+ --> 
+
+ <div class="input-group">
+       <input type="text" id="addCard" placeholder="Enter card name here" class="form-control">
+  
+    <!-- insert this line -->
+    <span class="input-group-addon" style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+  
+    <select id="deckOptions" class="form-control">
+        <option>Deck 1</option>
+        <option>Deck 2</option>
+    </select>
+</div>
+
+
+
+		<div id="deckLists">
+			
+				<div id="firstTable">
+					<!-- <p class="deckName">Deck 1</p> -->
+					<ul class ="deckTracker"id="deck1">
+						
+						<li><span> <i class="fa fa-times"></i></span>Kylo Ren</li>
+					</ul>
+				</div>
+			
+				<div id="secondTable">
+					<!-- <p class="deckName">Deck 2</p> -->
+					<ul class="deckTracker" id="deck2">
+					
+						<li><span><i class="fa fa-times"></i>
+	 					</span>Rey - force prodigy</li>
+					</ul>
+				</div>
+			
+		</div>	
+		
+		
+		
+	</div>
+
+	<script type="text/javascript" src="deckTracker.js"></script>
+</body>
+</html>
